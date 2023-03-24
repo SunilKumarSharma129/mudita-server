@@ -2,6 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const userRoutes = require("./app/routes/UserRoute");
+const doctorRoutes = require("./app/routes/DoctorRoutes");
+const bookingRoutes = require("./app/routes/BookingRoutes");
 
 require("dotenv").config();
 
@@ -25,6 +27,8 @@ const PORT = process.env.PORT;
 connect();
 
 app.use("/user",userRoutes)
+app.use("/doctor",doctorRoutes)
+app.use("/booking",bookingRoutes)
 
 app.listen(PORT, ()=>{
   console.log("Server started!!");
