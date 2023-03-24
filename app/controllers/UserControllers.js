@@ -1,5 +1,4 @@
 const UserModel = require("../db/models/UserModel")
-const admin = require("../config/firebase-config")
 
 const getUser = async (req, res) => {
   try {
@@ -32,7 +31,6 @@ const saveUser = async (req, res) => {
     res.status(400).send({ message: error.message });
   }
 };
-
 
 module.exports = {
     getUser,
