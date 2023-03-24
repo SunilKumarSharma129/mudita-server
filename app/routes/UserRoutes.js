@@ -4,7 +4,7 @@ const auth = require("../middlewares/auth");
 const router = express.Router();
 
 // Save user details
-router.post("/", auth.signUpAuthorization, controller.saveUser);
+router.post("/", controller.saveUser);
 
 // Get own details
 router.get("/", auth.userAuthorization, controller.getUser);
