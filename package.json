@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/mitrukahitesh/mudita-server/issues"
   },
-  "homepage": "https://github.com/mitrukahitesh/mudita-server#readme"
+  "homepage": "https://github.com/mitrukahitesh/mudita-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
 }
