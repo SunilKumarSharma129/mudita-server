@@ -4,6 +4,7 @@ const cors = require("cors");
 const userRoutes = require("./app/routes/UserRoutes");
 const doctorRoutes = require("./app/routes/DoctorRoutes");
 const bookingRoutes = require("./app/routes/BookingRoutes");
+const predictRoutes = require("./app/routes/PredictRoutes");
 
 require("dotenv").config();
 
@@ -29,6 +30,7 @@ connect();
 app.use("/user",userRoutes)
 app.use("/doctor",doctorRoutes)
 app.use("/booking",bookingRoutes)
+app.use("/predict",predictRoutes)
 
 app.listen(PORT, ()=>{
   console.log("Server started!!");
