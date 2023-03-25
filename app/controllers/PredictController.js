@@ -11,7 +11,9 @@ tf.serialization.registerClass(L2);
 
 const predictData = async (req, res) => {
   try {
-    const model = await tf.loadLayersModel("file://./../../model/model.json");
+    const model = await tf.loadLayersModel(
+      `file://${process.cwd()}/model/model.json`
+    );
     const inputData = req.body.inputData;
     const input = tf.tensor2d([inputData], [1, 38]);
     const tensor = model.predict(input);
