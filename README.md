@@ -1,4 +1,4 @@
-What is Mudita?
+# What is Mudita?
 Mudita is a web application designed for the early detection of mental health issues using machine learning. It provides a user-friendly survey to predict the user's mental health condition and suggests consultants for the user to talk to. These consultants can be either free or cost a fee, depending on the user's preference. The aim of this project is to help individuals identify their mental health issues at an early stage and take necessary steps to overcome them. Mudita utilizes machine learning algorithms to analyze the survey responses and provide accurate predictions about the user's mental health. The application is user-friendly and easy to navigate, making it accessible to a wide range of users. By using Mudita, users can proactively take charge of their mental health and improve their overall well-being.
 
 User will answer some questions and on the basis of that our model will predict his mental health. And on the basis of that we also suggest doctors.
